@@ -156,7 +156,7 @@ public class paypal_checkout extends Set {
 		
 		// place order button 
 				 WebElement place_order_btn  = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//span[contains(text(),'Place Order')]")));
-					Thread.sleep(1000);
+					Thread.sleep(3000);
 				    place_order_btn.click();
 					Thread.sleep(5000);
 
