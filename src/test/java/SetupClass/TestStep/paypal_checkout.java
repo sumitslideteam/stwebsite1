@@ -151,7 +151,6 @@ public class paypal_checkout extends Set {
 
 	@Then("^user proceed to pay with paypal pp$")
 	public void user_proceed_to_pay_with_paypal_pp() throws Throwable {
-	    
 		Thread.sleep(2000);
 		
 		// place order button 
@@ -164,7 +163,10 @@ public class paypal_checkout extends Set {
 		}
 		 catch (Exception e) {
 			 //TODO: handle exception	 
-	           } 
+	        } 
+		Thread.sleep(1000);
+		
+	}
 
 	@Then("^paypal popup appears and user navigates back to my account pp$")
 	public void paypal_popup_appears_and_user_navigates_back_to_my_account_pp() throws Throwable {
