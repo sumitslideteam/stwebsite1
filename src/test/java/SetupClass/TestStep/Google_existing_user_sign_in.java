@@ -16,7 +16,7 @@ import cucumber.api.java.en.Then;
 
 public class Google_existing_user_sign_in extends Set {
 
-	WebDriverWait wait = new WebDriverWait(driver,50);
+	WebDriverWait wait = new WebDriverWait(driver,80);
 	
 	@Given("^user is already on Home Page old gmail$")
 	public void user_is_already_on_Home_Page_old_gmail() throws InterruptedException  {
