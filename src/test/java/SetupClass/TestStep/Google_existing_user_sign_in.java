@@ -101,15 +101,15 @@ public class Google_existing_user_sign_in extends Set {
 	@Then("^logout pld gmail$")
 	public void logout_pld_gmail() throws Throwable {
 	   
-		Thread.sleep(2000);
-	    WebElement my_account_og = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[contains(.,'My Account')]")));
-	    Thread.sleep(2000);
+		Thread.sleep(8000);
+	    WebElement my_account_og = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("body > div.page-wrapper > header > div.header.content > div.panel.wrapper > div > div > ul > li:nth-child(1) > a")));
+	    Thread.sleep(4000);
 	   my_account_og.click();
 	    Thread.sleep(2000);
    
 		 Thread.sleep(3000);
-		 WebElement sign_out = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[contains(.,'Sign Out')]")));
-		 Thread.sleep(2000);
+		 WebElement sign_out = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("body > div.page-wrapper > header > div.header.content > div.panel.wrapper > div > div > ul > li.authorization-link > a")));
+		 Thread.sleep(3000);
 		 sign_out.click();
 		 Thread.sleep(3000);
 		
