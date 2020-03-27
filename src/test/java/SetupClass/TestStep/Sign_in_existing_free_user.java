@@ -91,8 +91,8 @@ public class Sign_in_existing_free_user extends Set{
 	    
 	
 		 Thread.sleep(3000);
-		 WebElement sign_out = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[contains(.,'Sign Out')]")));
-		 Thread.sleep(2000);
+		 WebElement sign_out = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("body > div.page-wrapper > header > div.header.content > div.panel.wrapper > div > div > ul > li.authorization-link > a")));
+		 Thread.sleep(3000);
 		 sign_out.click();
 		 Thread.sleep(3000);
 		
