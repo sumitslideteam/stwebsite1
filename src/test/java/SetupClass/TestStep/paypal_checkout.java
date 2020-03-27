@@ -171,6 +171,7 @@ public class paypal_checkout extends Set {
 	@Then("^paypal popup appears and user navigates back to my account pp$")
 	public void paypal_popup_appears_and_user_navigates_back_to_my_account_pp() throws Throwable {
 	    
+		try {
 		  // Maximize Window
 		  driver.manage().window().maximize();
 		
@@ -178,7 +179,9 @@ public class paypal_checkout extends Set {
 		  
 		  String currentWindow = driver.getWindowHandle();
 		  String popupWindowHandle = null;
-		  
+		   }
+		  catch (exception e) {
+		   }
 		  // Switch To Popup Window
 		  
 		  for(String handle : driver.getWindowHandles()){
