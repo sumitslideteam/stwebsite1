@@ -16,7 +16,7 @@ import cucumber.api.java.en.Then;
 
 public class Google_existing_user_sign_in extends Set {
 
-	WebDriverWait wait = new WebDriverWait(driver,80);
+	WebDriverWait wait = new WebDriverWait(driver,60);
 	
 	@Given("^user is already on Home Page old gmail$")
 	public void user_is_already_on_Home_Page_old_gmail() throws InterruptedException  {
@@ -54,8 +54,8 @@ public class Google_existing_user_sign_in extends Set {
 		Thread.sleep(4000);
 		try 
 		{
-	        By email = By.xpath("//*(@id='identifierId'));
-		WebElement gmail_email = wait.until(ExpectedConditions.elementToBeClickable(email));
+	    
+		WebElement gmail_email = wait.until(ExpectedConditions.elementToBeClickable(by.xpath("//*[@id="identifierId"]")));
 		Thread.sleep(8000);
 	    gmail_email.sendKeys("himanshi.sharma@slidetech.in");
 	    Thread.sleep(4000);
