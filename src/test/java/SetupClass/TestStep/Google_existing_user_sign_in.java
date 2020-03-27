@@ -54,7 +54,7 @@ public class Google_existing_user_sign_in extends Set {
 		Thread.sleep(4000);
 		try {
 			
-		WebElement gmail_email = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("/div/div/div[2]/div/div[1]/div/form/span/section/div/div/div/div/ul/li[1]/div/div[1]/div/div[2]/div[1]")));
+		WebElement gmail_email = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("body > div.page-wrapper > header > div.header.content > div.panel.wrapper > div > nav > div > div > ul > li:nth-child(9) > div > div > div.actions-toolbar.social-btn.social-btn-actions-toolbar.google-login > a")));
 		Thread.sleep(2000);
 	    gmail_email.sendKeys("himanshi.sharma@slidetech.in");
 	    Thread.sleep(2000);
