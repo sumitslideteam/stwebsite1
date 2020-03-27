@@ -52,24 +52,46 @@ public class Google_existing_user_sign_in extends Set {
 	@Then("^User click on sign in with google plus button old gmail$")
 	public void user_click_on_sign_in_with_google_plus_button_old_gmail() throws InterruptedException  {
 		Thread.sleep(4000);
+		try {
+			
 		WebElement gmail_email = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id="view_container"]/div/div/div[2]/div/div[1]/div/form/span/section/div/div/div/div/ul/li[1]/div/div[1]/div/div[2]/div[1]")));
 		Thread.sleep(2000);
 	    gmail_email.sendKeys("himanshi.sharma@slidetech.in");
 	    Thread.sleep(2000);
+		}
+		catch (exception e) {
+		}
+		
+		Thread.sleep(2000);
+		try {
 	    WebElement next_1 = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#identifierNext > span:nth-child(3) > span:nth-child(1)")));
 	    Thread.sleep(2000);
 	    next_1.click();
 	    Thread.sleep(2000);
+		}
+		catch (exception e) {
+		}
+		
+		Thread.sleep(2000);
+		try  {
 	    WebElement gmail_pass = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("btn-block btn-social btn-google social-btn > div:nth-child(1) > input:nth-child(1)")));
 	    Thread.sleep(2000);
 	    gmail_pass.sendKeys("himanshi@123");
 	    
 	    Thread.sleep(2000);
+		}
+		catch (exception e) {
+		}
+		
+		Thread.sleep(2000);
+		try {
 	    WebElement next_2 = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#passwordNext > span:nth-child(3)")));
 	    Thread.sleep(2000);
 	    next_2.click();
 	    Thread.sleep(2000);
-	    
+		}
+		catch (exception e) {
+		}
 		/*
 		 * WebElement
 		 * gmail_login_btn=wait.until(ExpectedConditions.elementToBeClickable(By.id(
