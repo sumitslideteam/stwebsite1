@@ -55,8 +55,6 @@ public class Google_existing_user_sign_in extends Set {
 		
 		WebElement gmail_email = new WebDriverWait(driver,20).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id='identifierId']")));
 		Thread.sleep(4000);
-		gmail.email.clear();
-		Thread.sleep(1000);
 	    gmail_email.sendKeys("himanshi.sharma@slidetech.in");
 	    Thread.sleep(2000);
 		
