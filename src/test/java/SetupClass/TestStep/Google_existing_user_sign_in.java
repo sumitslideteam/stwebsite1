@@ -21,7 +21,8 @@ public class Google_existing_user_sign_in extends Set {
 	@Given("^user is already on Home Page old gmail$")
 	public void user_is_already_on_Home_Page_old_gmail() throws InterruptedException  {
 		driver.get(AppURL);
-		driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
+		//*driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);  
 		log.info("It's opening the website URL");
 		Thread.sleep(2000);
 	
@@ -54,9 +55,9 @@ public class Google_existing_user_sign_in extends Set {
 		Thread.sleep(4000);
 		try {
 
-		WebElement gmail_email = wait.until(ExpectedConditions.elementToBeClickable(By.className("Xb9hP")));
+		WebElement gmail_email = wait.until(ExpectedConditions.elementToBeClickable(By.className("whsOnd zHQkBf"))).sendKeys("slidetech.qa@gmail.com");
 		Thread.sleep(2000);
-	    gmail_email.sendKeys("slidetech.qa@gmail.com");
+	 //*   gmail_email.sendKeys("slidetech.qa@gmail.com");
 	    Thread.sleep(2000);
 		} catch (NoSuchElementException Ext) {
 		} 
