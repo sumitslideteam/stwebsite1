@@ -52,6 +52,7 @@ public class Google_existing_user_sign_in extends Set {
 
 	@Then("^User click on sign in with google plus button old gmail$")
 	public void user_click_on_sign_in_with_google_plus_button_old_gmail() throws InterruptedException  {
+		driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);  
 		Thread.sleep(4000);
 		try {
 
