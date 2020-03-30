@@ -52,10 +52,10 @@ public class Google_existing_user_sign_in extends Set {
 
 	@Then("^User click on sign in with google plus button old gmail$")
 	public void user_click_on_sign_in_with_google_plus_button_old_gmail() throws InterruptedException  {
-		driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);  
+		  
 		Thread.sleep(4000);
 
-		WebElement gmail_email = wait.until(ExpectedConditions.elementToBeClickable(By.className("whsOndzHQkBf")));
+		WebElement gmail_email = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("/html/body/div[1]/div[1]/div[2]/div/div[2]/div/div/div[2]/div/div[1]/div/form/span/section/div/div/div[1]/div/div[1]/div/div[1]/input")));
 		Thread.sleep(2000);
 	        gmail_email.sendKeys("slidetech.qa@gmail.com");
 	         Thread.sleep(2000);
