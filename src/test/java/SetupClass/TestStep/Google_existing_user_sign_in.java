@@ -53,7 +53,8 @@ public class Google_existing_user_sign_in extends Set {
 	public void user_click_on_sign_in_with_google_plus_button_old_gmail() throws InterruptedException  {
 		Thread.sleep(4000);
 		
-		WebElement gmail_email = wait.until(ExpectedConditions.elementToBeClickable(By.Id("//*[@id='btn btn-block btn-social btn-google social-btn']")));
+		WebElement gmail_email = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("btn btn-block btn-social btn-google social-btn")));
+		WebElement gmail_email = wait.findElement(by.Id("identifierId"));
 		Thread.sleep(8000);
 		
 	    gmail_email.sendKeys("himanshi.sharma@slidetech.in");
