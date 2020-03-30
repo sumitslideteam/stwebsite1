@@ -56,47 +56,40 @@ public class Google_existing_user_sign_in extends Set {
 		
                driver.get("https://www.slideteam.net/");
 		Thread.sleep(4000);
-		WebElement gmail_link = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@class='btn btn-block btn-social btn-google']")));
+		WebElement gmail_link = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@class='btn btn-block btn-social btn-google social-btn']")));
 		Thread.sleep(2000);
-	    gmail_link.click();
+	        gmail_link.click();
 		Thread.sleep(3000);
-		
-		Thread.sleep(4000);
 
-		WebElement gmail_email = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("/html/body/div[1]/div[1]/div[2]/div/div[2]/div/div/div[2]/div/div[1]/div/form/span/section/div/div/div[1]/div/div[1]/div/div[1]/input")));
+
+		WebElement gmail_email = wait.until(ExpectedConditions.elementToBeClickable(By.Id("identifierId")));
 		Thread.sleep(2000);
 	        gmail_email.sendKeys("slidetech.qa@gmail.com");
 	         Thread.sleep(2000);
 		
 		Thread.sleep(2000);
-		try {
+		
 	    WebElement next_1 = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#identifierNext > span:nth-child(3) > span:nth-child(1)")));
 	    Thread.sleep(2000);
 	    next_1.click();
 	   Thread.sleep(2000);
-		} catch (NoSuchElementException Ext) {
-		
-		}		
+				
 		Thread.sleep(2000);
 		
-		try {
+		
 	    WebElement gmail_pass = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("btn-block btn-social btn-google social-btn > div:nth-child(1) > input:nth-child(1)")));
 	    Thread.sleep(2000);
 	    gmail_pass.sendKeys("himanshi@123");
 	    Thread.sleep(2000);
-		}
-		 catch (NoSuchElementException Ext) {
-		 }
+		
 		
 		Thread.sleep(2000);
-                try {
+                
 	    WebElement next_2 = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#passwordNext > span:nth-child(3)")));
 	    Thread.sleep(2000);
 	    next_2.click();
 	    Thread.sleep(2000);
-		}
-		 catch (NoSuchElementException Ext) {
-		 }
+		
 		/*
 		 * WebElement
 		 * gmail_login_btn=wait.until(ExpectedConditions.elementToBeClickable(By.id(
