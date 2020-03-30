@@ -53,6 +53,8 @@ public class Google_existing_user_sign_in extends Set {
 	public void user_click_on_sign_in_with_google_plus_button_old_gmail() throws InterruptedException  {
 		Thread.sleep(4000);
 		try {
+			WebElement email = driver.findElement(By.cssSelectoor("//*[@id='identifierId']"));
+			email.click();
 		WebElement gmail_email = wait.until(ExpectedConditions.elementToBeClickable(By.id("identifierId")));
 		Thread.sleep(2000);
 	    gmail_email.sendKeys("slidetech.qa@gmail.com");
