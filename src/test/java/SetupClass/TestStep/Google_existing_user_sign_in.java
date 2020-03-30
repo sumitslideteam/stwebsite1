@@ -63,7 +63,7 @@ public class Google_existing_user_sign_in extends Set {
 		
 		Thread.sleep(4000);
 
-		WebElement gmail_email = wait.until(ExpectedConditions.ElementIsVisible(By.xpath("/html/body/div[1]/div[1]/div[2]/div/div[2]/div/div/div[2]/div/div[1]/div/form/span/section/div/div/div[1]/div/div[1]/div/div[1]/input")));
+		WebElement gmail_email = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("/html/body/div[1]/div[1]/div[2]/div/div[2]/div/div/div[2]/div/div[1]/div/form/span/section/div/div/div[1]/div/div[1]/div/div[1]/input")));
 		Thread.sleep(2000);
 	        gmail_email.sendKeys("slidetech.qa@gmail.com");
 	         Thread.sleep(2000);
